@@ -1,7 +1,7 @@
 ﻿using System;
 namespace _01_Calculator
 {
-    internal class Calculator
+    public class Calculator
     {
 
         public static int Add(int a, int b)
@@ -25,6 +25,17 @@ namespace _01_Calculator
             return sum;
 
         }
+
+
+        public static double Div(int a, int b)
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("Error, can't divide with 0!");
+            }
+            return a / b;
+        }
+
 
         public static int Multy(int a, int b)
         {
